@@ -1,1 +1,21 @@
 /* sai que é sua tafarel*/
+
+
+
+*/
+
+
+.tabelinha
+{
+    border: 1px solid blue;
+}
+.tabelinha td{
+    border-bottom: 1px solid red;
+    
+
+}
+
+.campo{
+    padding: 15px;
+
+}

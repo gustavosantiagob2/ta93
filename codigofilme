@@ -1,0 +1,35 @@
+
+
+
+    <table>
+
+<thead>
+        <th>cod_filme</th>
+        <th>titulo</th>
+        <th>sinopse</th>
+        
+</thead>
+
+<tbody> 
+
+
+</tbody>
+
+</table>
+
+
+if(isset($_POST['bt-enviar']))
+
+{
+
+    $nome = $_POST['nome'];
+
+    $cpf = $_POST['cpf'];
+
+    $inserSql = "insert cliente (nome, cpf) values('$nome','$cpf')";
+
+    $resultado = $conn->query($inserSql);
+
+    header('location: cliente.php');
+
+}
