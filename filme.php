@@ -1,4 +1,4 @@
-<?php 
+    <?php 
 include "conecta.php";
 
 $consultasql = "SELECT * FROM FILME ORDER BY LANCAMENTO DESC";
@@ -20,7 +20,7 @@ if(isset($_POST['bt-enviar']))
     $duracao = $_POST ['duracao'];
     $preco = $_POST ['preco'];
     $insertsql = " insert filme (cod_filme ,titulo, sinopse, lancamento ,pais_origem, duracao, preco) values ( '$cod_filme','$titulo', '$sinopse', '$lancamento' ,'$pais_origem', '$duracao', '$preco')";
-    $insertsql = $conn -> query($insertsql);
+    $resultado = $conn -> query($insertsql);
     header('location: filme.php');
 
 }
@@ -30,7 +30,7 @@ if(isset($_POST['bt-enviar']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>filmes</title>
+    <title>filmes (<?php echo $num_rows?>) </title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         td{
