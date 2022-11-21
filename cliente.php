@@ -126,6 +126,8 @@ include "conecta.php";
                     <td><?php echo $row['cod_cliente'];?></td>
                     <td><?php echo $row['nome'];?></td>
                     <td><?php echo $row['cpf'];?></td>
+                    <td><a href="cliente.php?codedit=<?php echo $row['cod_cliente'];?>">Editar</a></td>
+                    <td><a href="cliente.php?codarq=<?php echo $row['cod_cliente'];?>">Arquivar</a></td>
                     <td><a href="cliente.php?codedit=<?php echo $row['cod_cliente'];?>"><span class="material-icons">edit</span></a></td>
                     <td><a hrerf="cliente.php?codarq=<?php echo $row['cod_cliente'];?>"><span class="material-icons">drive_file_move_outline</span></a></td> 
                 </tr>
@@ -153,6 +155,7 @@ include "conecta.php";
                     <td><?php echo $rowarq['cod_cliente'];?></td>
                     <td><?php echo $rowarq['nome'];?></td>
                     <td><?php echo $rowarq['cpf'];?></td>
+                    <td><a href="cliente.php?codrest=<?php echo $rowArq['cod_cliente'];?>">Restaurar</a></td>
                     <td><a href="cliente.php?codrest=<?php echo $rowarq['cod_cliente'];?>"><span class="material-icons"> restore_page </span>Restaurar</a></td>
                     <td><a href="cliente.php?coddel=<?php echo $rowarq['cod_cliente'];?>">Deletar</a></td>
                 </tr>
